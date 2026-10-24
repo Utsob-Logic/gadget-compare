@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCompare BD - বাংলাদেশ টেক প্রাইস তুলনা</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">TechCompare <span>BD</span></div>
+        <input type="text" id="searchInput" class="search-box" placeholder="প্রোডাক্ট খুঁজুন, যেমন: iPhone, RTX, Router...">
+    </header>
+
+    <!-- ক্যাটাগরি ফিল্টার মেনু -->
+    <nav class="category-nav">
+        <button class="cat-btn active" data-cat="all">সব প্রডাক্ট</button>
+        <button class="cat-btn" data-cat="Laptop">ল্যাপটপ</button>
+        <button class="cat-btn" data-cat="Smartphone">স্মার্টফোন</button>
+        <button class="cat-btn" data-cat="Monitor">মনিটর</button>
+        <button class="cat-btn" data-cat="GPU">গ্রাফিক্স কার্ড</button>
+        <button class="cat-btn" data-cat="Processor">প্রসেসর</button>
+        <button class="cat-btn" data-cat="Router">রাউটার</button>
+        <button class="cat-btn" data-cat="Headphone">হেডফোন & এক্সেসরিজ</button>
+    </nav>
+
+    <main class="container">
+        <div id="productCount" class="product-count">প্রোডাক্ট লোড হচ্ছে...</div>
+        <div id="productGrid" class="product-grid"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
